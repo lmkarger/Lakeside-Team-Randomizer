@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 
-const player_vals = {
+const player_vals: { [key: string]: number } = {
   "Remi": 5,
   "Brennan": 5,
   "Gabe": 5,
@@ -32,10 +32,10 @@ const playerNames = Object.keys(player_vals);
 
 export default function Home() {
 
-  const [chosenTeamA, setChosenTeamA] = useState([]);
-  const [chosenTeamB, setChosenTeamB] = useState([]);
-  const [teamAVal, setTeamAVal] = useState([]);
-  const [teamBVal, setTeamBVal] = useState([]);
+  const [chosenTeamA, setChosenTeamA] = useState<string[]>([]);
+  const [chosenTeamB, setChosenTeamB] = useState<string[]>([]);
+  const [teamAVal, setTeamAVal] = useState<number>(0);
+  const [teamBVal, setTeamBVal] = useState<number>(0);
   // State must be inside the component
   const [selectedPlayers, setSelectedPlayers] = useState<string[]>([]);
   const [isVisible, setIsVisible] = useState(false);
