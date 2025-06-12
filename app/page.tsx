@@ -56,15 +56,15 @@ export default function Home() {
   }
 
   function generateTeams() {
-    var teamA: string[] = [];
-    var teamAVal = 0;
-    var teamB: string[] = [];
-    var teamBVal = 0;
-    var group1: string[] = [];
-    var group2: string[] = [];
-    var group3: string[] = [];
-    var group4: string[] = [];
-    var group5: string[] = [];
+    let teamA: string[] = [];
+    let teamAVal = 0;
+    let teamB: string[] = [];
+    let teamBVal = 0;
+    let group1: string[] = [];
+    let group2: string[] = [];
+    let group3: string[] = [];
+    let group4: string[] = [];
+    let group5: string[] = [];
     for (const player of selectedPlayers){ //sorts players into tiers
       if (player_vals[player] == 1){
         group1 = group1.concat(player);
