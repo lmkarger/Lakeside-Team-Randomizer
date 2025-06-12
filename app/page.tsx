@@ -246,7 +246,7 @@ export default function Home() {
   return (
     <div>
       <div className="text-center m-5 text-2xl bg-blue-500 p-5">Select the Players</div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 mb-20">
         {playerNames.map((player) => {
           const isSelected = selectedPlayers.includes(player);
           console.log('chosenTeamA:', chosenTeamA);
@@ -278,7 +278,7 @@ export default function Home() {
             <button className="text-xl sm:text-2xl ml-5 mt-5 p-3 bg-blue-500 rounded-full flex items-center justify-center" onClick={toggleShowTeams}>Back to Player Selection</button>
           </div>
           <div className="flex justify-center items-center">
-          <div>
+          <div className='mb-20'>
             <div className='text-center text-red-500 mt-10 text-2xl'>
             Team Strength: {teamAVal}
             </div>
@@ -292,7 +292,7 @@ export default function Home() {
         })}
           </div>
           <h1 className="text-5xl">VS.</h1>
-          <div>
+          <div className='mb-20'>
           <div className='text-center text-red-500 mt-10 text-2xl'>
             Team Strength: {teamBVal}
             </div>
